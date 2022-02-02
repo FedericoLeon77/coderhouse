@@ -1,0 +1,117 @@
+/*Estilos generales CSS Index*/
+/*RESETEO CSS*/
+
+header {
+    background-image: linear-gradient(to right, #a37f32, #E5D175);
+}
+
+nav {
+    background: #111;
+    color: #a37f32;
+}
+
+.contenido {
+    width: 100%;
+    background-color: #d3d3d3;
+}
+
+.titulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Aplicando GRIDS*/
+.gallery {
+    display: grid;
+grid-template-areas:
+"nav header header"
+"nav footer footer";
+grid-template-rows: 80% 25px;
+grid-template-columns: 30% 30% 30%;
+max-width: 100%;
+height: auto;
+border: 2px solid grey;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    background-image: linear-gradient(to right, #a37f32, #E5D175);
+    grid-area: footer;
+}
+
+.pictures {
+    display: flex
+}
+
+/*RESPONSIVE*/
+
+/*Desktop*/
+@media screen and (max-width: 1200px) {
+    body {
+        background: white;
+        color: #333;
+        font-size: 5rem;
+        grid-template-columns: repeat(3, 1fr);
+        border: 2px solid black;
+
+    }
+}
+
+/*Tablets*/
+@media (min-width: 481px) and (max-width: 1024px) {
+    body {
+        color: #fff;
+        text-transform: uppercase;
+        font-family: serif;
+        font-size: 2rem;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+/*Smartphone*/
+@media (max-width: 480px) {
+    body {
+        background-color: white;
+        color: #333;
+        font-size: 1rem;
+    }
+}
+
+/*Box Modeling*/
+
+img {
+    margin-left: 10px;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    /*Forma abrevida top, right, bottom, left*/
+}
+
+ul li {
+    display: inline-block;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    width: 170px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+li:hover {
+    background-color: #a37f32;
+    color: white;
+}
+
+footer {
+    background-color: #a37f32;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

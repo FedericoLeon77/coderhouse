@@ -5,23 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../estilos.css">
 </head>
-
-<body>
-    <header>
-        <img src="./images/logotipo.png" alt="logotipo">
-        <link rel="shortcut icon" href="./images/favicon.png">
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./burgers.html">Burgers</a></li>
-                <li><a href="./equipo.html">Sé parte del equipo</a></li>
-                <li><a href="./sucursales.html">Sucursales</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-
-            </ul>
-        </nav>
+        <body>
+            <header>
+                <img src="./images/logotipo.png" alt="logotipo">
+                <link rel="shortcut icon" href="./images/favicon.png">
+                                <!-- menu bootstrap -->
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./images/logotipo.png" alt="" width="50" height="40">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./burgers.html">Burgers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./equipo.html">Sé parte del equipo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./sucursales.html">Sucursales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- fin menu bootstrap -->
     </header>
     <br><br>
     <div id="background">
@@ -33,27 +54,73 @@
     <br><br>
     <main>
         <section>
-            <form action="" method="">
-                <fieldset>
-                    <legend>Completa el formulario</legend>
-                    <label for="nombre">Nombre completo:</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Su nombre completo" required><br><br>
-                    <label for="email">Puesto de trabajo:</label>
-                    <input type="email" name="email" id="email" placehold er="Puesto de trabajo"><br><br>
-                    <input type="file" name="file" /><br><br>
-                    <textarea name="texto" id="texto" cols="30" rows="5"
-                        placeholder="Contanos de vos con una breve descripción" required></textarea><br>
-                    <input type="button" name="" id="" value="Enviar">
-                </fieldset>
-            </form>
+ <!-- formulario bootstrap -->
+ <form class="was-validated">
+  <div class="mb-3">
+    <label for="validationTextarea" class="form-label">¿Que valor le podrias agregar a la empresa?</label>
+    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Contanos un poco de vos y porque queres formar parte de nuestro equipo." required></textarea>
+    <div class="invalid-feedback">
+      Por favor complete el espacio de texto.
+    </div>
+  </div>
+
+  <div class="mb-3">
+    <label for="validationTextarea" class="form-label">Seleccione el puesto de trabajo interesado</label>
+  </div>
+
+  <div class="form-check">
+    <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+    <label class="form-check-label" for="validationFormCheck2">Ayudante de Cocina</label>
+  </div>
+  <div class="form-check mb-3">
+    <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+    <label class="form-check-label" for="validationFormCheck3">Telefonista/Adicionista</label>
+    <div class="invalid-feedback">Por favor seleccione una opción</div>
+  </div>
+
+  <div class="mb-3">
+    <select class="form-select" required aria-label="select example">
+      <option value="">Disponibilidad horaria</option>
+      <option value="1">Full-time</option>
+      <option value="2">Turno Mañana</option>
+      <option value="3">Turno Noche</option>
+    </select>
+    <div class="invalid-feedback">Por favor seleccione una opción</div>
+  </div>
+
+  <div class="mb-3">
+    <label for="validationTextarea" class="form-label">Por favor cargue su CV</label>
+    <input type="file" class="form-control" aria-label="file example" required>
+    <div class="invalid-feedback">Cargue su CV</div>
+  </div>
+
+  <div class="mb-3">
+    <button class="btn btn-primary" type="submit" disabled>Enviar</button>
+  </div>
+</form>
+ <!-- fin formulario bootstrap -->
         </section>
     </main>
     <br><br>
-    <footer>
-        <p>The Bronx Street Food - Est. 2020</p>
-        <a href="http://www.instagram.com/thebronx.streetfood"><img src="./images/instagram.png" alt="Instagram" /></a>
-        <a href="http://www.facebook.com/thebronx.streetfood"><img src="./images/facebook.png" alt="Facebook" /></a>
-    </footer>
+<!-- footer bootstrap -->
+<div class="container-xxl">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="./images/logotipo.png" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <span class="text-black">&copy; The Bronx Street Food</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <a href="http://www.instagram.com/thebronx.streetfood"><img src="./images/instagram.png"
+        alt="Instagram" /></a>
+<a href="http://www.facebook.com/thebronx.streetfood"><img src="./images/facebook.png"
+        alt="Facebook" /></a>
+    </ul>
+  </footer>
+</div>
+<!-- fin footer bootstrap -->
 </body>
 
 </html>

@@ -5,22 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../estilos.css">
 </head>
-<body>
-    <header>
-        <img src="./images/logotipo.png" alt="logotipo">
-        <link rel="shortcut icon" href="./images/favicon.png">
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./burgers.html">Burgers</a></li>
-                        <li><a href="./equipo.html">Sé parte del equipo</a></li>
-                        <li><a href="./sucursales.html">Sucursales</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-
-                    </ul>
-                </nav>
+        <body>
+            <header>
+                <img src="./images/logotipo.png" alt="logotipo">
+                <link rel="shortcut icon" href="./images/favicon.png">
+                                <!-- menu bootstrap -->
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./images/logotipo.png" alt="" width="50" height="40">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./burgers.html">Burgers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./equipo.html">Sé parte del equipo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./sucursales.html">Sucursales</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- fin menu bootstrap -->
             </header>
 <br><br>
     <h1>CONTACTO</h1>
@@ -43,13 +65,25 @@
         </section>
     </main>
     <br><br>
-    <footer>
-        <p>The Bronx Street Food - Est. 2020</p>
-        <a href="http://www.instagram.com/thebronx.streetfood"><img src="./images/instagram.png"
-                alt="Instagram" /></a>
-        <a href="http://www.facebook.com/thebronx.streetfood"><img src="./images/facebook.png"
-                alt="Facebook" /></a>
-    </footer>
+<!-- footer bootstrap -->
+<div class="container-xxl">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="./images/logotipo.png" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+      </a>
+      <span class="text-black">&copy; The Bronx Street Food</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <a href="http://www.instagram.com/thebronx.streetfood"><img src="./images/instagram.png"
+        alt="Instagram" /></a>
+<a href="http://www.facebook.com/thebronx.streetfood"><img src="./images/facebook.png"
+        alt="Facebook" /></a>
+    </ul>
+  </footer>
+</div>
+<!-- fin footer bootstrap -->
 </body>
 
 </html>

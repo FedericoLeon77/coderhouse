@@ -96,7 +96,7 @@ img {
     /*Forma abrevida top, right, bottom, left*/
 }
 
-ul li {
+/* ul li {
     display: inline-block;
     color: white;
     background-color: black;
@@ -109,7 +109,7 @@ ul li {
 li:hover {
     background-color: #a37f32;
     color: white;
-}
+} */
 
 footer {
     background-color: #a37f32;

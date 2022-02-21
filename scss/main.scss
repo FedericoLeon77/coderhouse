@@ -1,0 +1,31 @@
+//Nesting o anidamiento
+/*Header*/
+@import "header";
+
+/*Main*/
+
+.gallery {
+    display: grid;
+grid-template-areas:
+"nav header header"
+"nav footer footer";
+grid-template-rows: 80% 25px;
+grid-template-columns: 30% 30% 30%;
+max-width: 100%;
+height: auto;
+border: 2px solid grey;
+}
+
+img {
+    margin-left: 10px;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.pictures {
+    display: flex
+}
+
+/*Footer*/
+@import "footer";
